@@ -1,0 +1,25 @@
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-size: 20px;
+    font-family: consolas;
+
+}
+
+.boton{
+    width: 200px;
+    height: 120px;
+    font-family: console;
+    font-size: 25px;
+    font-weight: bold;
+    
+}
+
+.boton:hover{
+    font-size: 24px;
+    background-color:  coral;
+}

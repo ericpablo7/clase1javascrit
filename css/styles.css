@@ -10,16 +10,3 @@ body{
 
 }
 
-.boton{
-    width: 200px;
-    height: 120px;
-    font-family: console;
-    font-size: 25px;
-    font-weight: bold;
-    
-}
-
-.boton:hover{
-    font-size: 24px;
-    background-color:  coral;
-}

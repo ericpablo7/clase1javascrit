@@ -1,37 +1,40 @@
 
 alert("PLATAFORMA CODERHOUSE")
-alert("Vamos a registrar a un nuevo alumno")
+alert("Vamos a registrar alumnos nuevos")
 
-let nombre = prompt("Ingrese su nombre: ")
-let apellido = prompt("Ingrese su apellido: ")
-saludar(nombre, apellido)
+let cantidad = parseInt(prompt("Cuantos son los nuevos alumnos: "))
 
-let edad = parseInt(prompt("Edad: "))
 
-while(edad < 18){
-    alert("El dato es incorrecto , ingrese nuevamente.")
-    edad = parseInt(prompt("Edad: "))
+while (cantidad > 3 ){
+    alert("No hay tantos cupos, solo disponemos de 3.")
+    cantidad = parseInt(prompt("Cuantos son los nuevos alumnos: "))
 }
 
-function saludar(nombre, apellido){
-    alert(`Bienvenido alumno: ${nombre} ${apellido}`)
+
+
+class alumno{
+    constructor(nombre,apellido){
+        this.nombre = nombre;
+        this.apellido = apellido;
+    }
+    registro(){
+        alert(`Bienvenido Señor ${this.apellido}`);
+    }
 }
 
-let primerNota = parseInt(prompt("Ingrese la primer nota: "))
-let segundaNota = parseInt(prompt("Ingrese la segund anota: "))
+const alumno1 = new alumno("Eric", "Internicola");
+const alumno2 = new alumno("Pablo", "Coria");
+const alumno3 = new alumno("Jose", "Alza");
 
-let sumoNotas = (a,b) => a + b
 
-let promedio = function (primerNota, segundaNota) { return sumoNotas(primerNota, segundaNota) / 2}
+alumno1.registro();
+alumno2.registro();
+alumno3.registro();
 
-alert("El promedio de notas es de " + promedio(primerNota,segundaNota))
 
-if(promedio(primerNota, segundaNota) < 6) {
-    alert("Lamentablemente desaprobaste, tenes que repetir el curso")
-}
-else{
-    alert("Felicitaciones , aprobaste el curso")
-}
+
+
+
 
 
 

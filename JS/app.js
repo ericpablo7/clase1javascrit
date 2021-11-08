@@ -35,7 +35,7 @@ console.log(datosAlumnos)
 alert( `Pasaron la etapa de seleccion los alumnos : ${filtro}`)
 
 
-document.write("MUCHOS EXITOS !!!!! ")
+document.write("MUCHOS EXITOS !!!!!! ")
 
 
 

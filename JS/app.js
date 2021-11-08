@@ -11,30 +11,31 @@ while (cantidad > 3 ){
 }
 
 
+const listaNombres = [];
 
-class alumno{
-    constructor(nombre,apellido){
-        this.nombre = nombre;
-        this.apellido = apellido;
-    }
-    registro(){
-        alert(`Bienvenido Señor ${this.apellido}`);
-    }
+do{
+    let entrada = prompt("Ingresar nombre");
+    listaNombres.push(entrada);
+    console.log(listaNombres.length);
+ }
+while(listaNombres.length != cantidad)
+ 
+ 
+const filtro = listaNombres.filter(elemento => elemento.includes("e"));
+
+const modalidad = {
+    modo : "desde casa",
+    horario : 2030,
+    requisito : "windows10",
 }
 
-const alumno1 = new alumno("Eric", "Internicola");
-const alumno2 = new alumno("Pablo", "Coria");
-const alumno3 = new alumno("Jose", "Alza");
+const datosAlumnos = listaNombres.concat(modalidad);
+
+console.log(datosAlumnos)
+alert( `Pasaron la etapa de seleccion los alumnos : ${filtro}`)
 
 
-alumno1.registro();
-alumno2.registro();
-alumno3.registro();
-
-
-
-
-
+document.write("MUCHOS EXITOS !!!! ")
 
 
 

@@ -21,7 +21,7 @@ do{
 while(listaNombres.length != cantidad)
  
  
-const filtro = listaNombres.filter(elemento => elemento.includes("e"));
+const filtro = listaNombres.filter(elemento => elemento.includes("a"));
 
 const modalidad = {
     modo : "desde casa",
